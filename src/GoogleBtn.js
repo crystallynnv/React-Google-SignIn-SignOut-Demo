@@ -22,10 +22,10 @@ class GoogleBtn extends Component {
   }
 
   login (response) {
-    if(response.Zi.access_token){
+    if(response.accessToken){
       this.setState(state => ({
         isLogined: true,
-        accessToken: response.Zi.access_token
+        accessToken: response.accessToken
       }));
     }
   }
